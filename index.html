@@ -66,39 +66,6 @@
         <div class="container section-one">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="section-button" type="button">Order Service</button>
-          <div class="backdrop">
-            <div class="modal">
-              <form name="contacts" class="form-sektion-one">
-                <button name="button-close" type="submit" class="close-batton">
-                  <svg width="8" height="8">
-                    <use
-                      href="./images/icons.svg#icon-close"
-                      class="icon-close"
-                    ></use>
-                  </svg>
-                </button>
-                <label name="contacts" class="lable-contact">
-                  Leave your contacts and we will call you back
-                </label>
-                <label class="name-field" name="name">
-                  Name <input type="text" class="field-text" />
-                </label>
-                <label class="name-field" name="Phone">
-                  Phone
-                  <input type="tel" class="field-text" />
-                </label>
-                <label class="name-field" name="Email">
-                  Email
-                  <input type="email" class="field-text" />
-                </label>
-                <label class="comment-field" name="Comment">
-                  Comment
-                  <textarea name="comment-muitiline" placeholder="Text input">
-                  </textarea>
-                </label>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -529,5 +496,66 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button name="button-close" type="submit" class="close-batton">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close" class="icon-close"></use>
+          </svg>
+        </button>
+        <p class="lable-contact">
+          Leave your contacts and we will call you back
+        </p>
+        <form name="contacts" class="form-modal">
+          <div class="field">
+            <label class="name-field" name="name">
+              Name
+              <div class="field-container">
+                <input type="text" class="field-text" />
+                <svg class="icon-field" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="field">
+            <label class="name-field" name="Phone">
+              Phone
+              <div class="field-container">
+                <input type="tel" class="field-text" />
+                <svg class="icon-field" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="field">
+            <label class="name-field" name="Email">
+              Email
+              <div class="field-container">
+                <input type="email" class="field-text" />
+                <svg class="icon-field" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <!-- multilane-field--->
+          <div class="comment">
+            <label class="comment-field" name="Comment">
+            Comment
+            <textarea
+              class="comment-muitiline"
+              name="comment-muitiline"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          
+          </label>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
