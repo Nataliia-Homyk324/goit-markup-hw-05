@@ -476,6 +476,7 @@
             </li>
           </ul>
         </div>
+        <!--Subscribe-->
         <div class="subscribe">
           <p class="text-footer-social">Subscribe</p>
           <form name="Subscribe" autocomplete="off" class="form-footer">
@@ -496,10 +497,13 @@
         </div>
       </div>
     </footer>
+
+    <!--Backdrop-->
+
     <div class="backdrop">
       <div class="modal">
-        <button name="button-close" type="submit" class="close-batton">
-          <svg width="8" height="8">
+        <button name="button-close" type="button" class="close-batton">
+          <svg class="icon-modal" width="8" height="8">
             <use href="./images/icons.svg#icon-close" class="icon-close"></use>
           </svg>
         </button>
@@ -508,32 +512,35 @@
         </p>
         <form name="contacts" class="form-modal">
           <div class="field">
-            <label class="name-field" name="name">
-              Name
-              <div class="field-container">
-                <input type="text" class="field-text" />
-                <svg class="icon-field" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="user-name" class="name-field" name="name"> Name </label>
+            <div class="field-container">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="field-text"
+              />
+              <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="field">
-            <label class="name-field" name="Phone">
+            <label class="name-field" for="user-phone" name="Phone">
               Phone
-              <div class="field-container">
-                <input type="tel" class="field-text" />
-                <svg class="icon-field" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
             </label>
+            <div class="field-container">
+              <input type="tel" class="field-text" id="user-phone" />
+              <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="field">
-            <label class="name-field" name="Email">
+            <label class="name-field" for="user-email" name="Email">
               Email
               <div class="field-container">
-                <input type="email" class="field-text" />
+                <input type="email" class="field-text" id="user-email" />
                 <svg class="icon-field" width="18" height="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
@@ -555,6 +562,13 @@
             </textarea>
           </div>
           <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+
             <label for="user-privacy" class="label-checkbox">
               <span class="icon-checkbox">
                 <svg class="icon-chec" width="10" height="8">
@@ -565,14 +579,6 @@
 
               <a href="" class="privacy-policy">Privacy Policy</a>
             </label>
-
-            <input
-              class="visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              value="true"
-              name="user-privacy"
-            />
           </div>
           <button class="send" type="submit">Send</button>
         </form>
