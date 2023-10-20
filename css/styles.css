@@ -631,26 +631,27 @@ input::placeholder {
 
 }
 
-.close-batton:hover{
+.close-batton:hover {
     background-color: #404bbf;
     border: none;
     
 
 }
 
-.close-batton:focus{
+.close-batton:focus {
 background-color: #404bbf;
 border: none;
 
 }
 .icon-modal{
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-modal:hover .icon-close{
+.close-batton:hover .icon-modal{
     fill: #ffffff;
 }
 
-.icon-modal:focus .icon-close  {
+.close-batton:focus .icon-modal  {
     fill: #ffffff;
 }
 .icon-close {
@@ -790,7 +791,7 @@ border: none;
     
 }
 
-input:checked .icon-checkbox{
+.label-checkbox .user-privacy + .icon-checkbox{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
