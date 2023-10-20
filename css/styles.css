@@ -506,6 +506,8 @@ a:not(.privacy-policy) {
 .logo-text-footer{
     margin-right: 120px;
 }
+
+
 .subscribe {
     display: block;
     margin-left: 80px;
@@ -517,39 +519,47 @@ a:not(.privacy-policy) {
 }
 
 .button-footer {
-    display: inline-flex;
+    display:flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     background: #4D5AE5;
-    border: transparent;
-
-}
-
-.button-text {
-    color: #FFFFFF;
-    text-align: center;
-    font-family: Roboto;
+    border: none;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+
 }
+.icon-subscribe {
+    fill: #f4f4fd;
+    margin-left: 16px;
+}
+
 
 .email {
 
     width: 264px;
     height: 40px;
     flex-shrink: 0;
-    border-radius: 4px;
     border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background: #2E2F42;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
+
 
 }
 
@@ -564,7 +574,9 @@ input::placeholder {
 }
 
 
+
 .backdrop {
+   
 
     position: fixed;
     top: 0;
