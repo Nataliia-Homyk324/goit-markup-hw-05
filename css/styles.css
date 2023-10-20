@@ -789,7 +789,7 @@ border: none;
     
 }
 
-.label-checkbox .user-privacy:checked + .icon-checkbox{
+.user-privacy:checked + .label-checkbox > .icon-checkbox{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
