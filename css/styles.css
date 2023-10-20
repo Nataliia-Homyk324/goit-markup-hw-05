@@ -654,10 +654,7 @@ border: none;
 .close-batton:focus .icon-modal  {
     fill: #ffffff;
 }
-.icon-close {
-    fill: #2e2f42;
 
-}
 
 .lable-contact {
     width: 360px;
