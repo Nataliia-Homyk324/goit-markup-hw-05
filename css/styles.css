@@ -523,7 +523,7 @@ a:not(.privacy-policy) {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    
     min-width: 165px;
     height: 40px;
     border-radius: 4px;
